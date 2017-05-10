@@ -18,14 +18,12 @@
 PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/huawei/kiwi/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/huawei/kiwi/proprietary/bin/garden_app:system/bin/garden_app \
-    vendor/huawei/kiwi/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
     vendor/huawei/kiwi/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/huawei/kiwi/proprietary/bin/huawei_version:system/bin/huawei_version \
     vendor/huawei/kiwi/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/huawei/kiwi/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/huawei/kiwi/proprietary/bin/libqmi_oem_main:system/bin/libqmi_oem_main \
-    vendor/huawei/kiwi/proprietary/bin/lowi-server:system/bin/lowi-server \
+    vendor/huawei/kiwi/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/huawei/kiwi/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/huawei/kiwi/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/huawei/kiwi/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -38,8 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/bin/teecd:system/bin/teecd \
     vendor/huawei/kiwi/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/huawei/kiwi/proprietary/bin/vm_bms:system/bin/vm_bms \
-    vendor/huawei/kiwi/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
-    vendor/huawei/kiwi/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/huawei/kiwi/proprietary/etc/camera/davinci/default/cm_correction.dat:system/etc/camera/davinci/default/cm_correction.dat \
     vendor/huawei/kiwi/proprietary/etc/camera/davinci/default/cm_foliage.dat:system/etc/camera/davinci/default/cm_foliage.dat \
     vendor/huawei/kiwi/proprietary/etc/camera/davinci/default/cm_normal.dat:system/etc/camera/davinci/default/cm_normal.dat \
@@ -150,6 +146,8 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
     vendor/huawei/kiwi/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/huawei/kiwi/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
+    vendor/huawei/kiwi/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/huawei/kiwi/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/huawei/kiwi/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/huawei/kiwi/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/huawei/kiwi/proprietary/etc/sound_param/kiw_l/Bluetooth_cal.acdb:system/etc/sound_param/kiw_l/Bluetooth_cal.acdb \
@@ -167,6 +165,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/etc/sound_trigger_mixer_paths_wcd9306.xml:system/etc/sound_trigger_mixer_paths_wcd9306.xml \
     vendor/huawei/kiwi/proprietary/etc/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
     vendor/huawei/kiwi/proprietary/etc/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
+    vendor/huawei/kiwi/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/huawei/kiwi/proprietary/global/ons/ons.bin:system/global/ons/ons.bin \
     vendor/huawei/kiwi/proprietary/lib64/hw/fingerprintd.ex.so:system/lib64/hw/fingerprintd.ex.so \
     vendor/huawei/kiwi/proprietary/lib64/hw/fingerprint.msm8916.so:system/lib64/hw/fingerprint.msm8916.so \
@@ -206,6 +205,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/lib/libSFBE.so:system/lib/libSFBE.so \
     vendor/huawei/kiwi/proprietary/lib/libSmartAE.so:system/lib/libSmartAE.so \
     vendor/huawei/kiwi/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/huawei/kiwi/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/huawei/kiwi/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/huawei/kiwi/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg \
     vendor/huawei/kiwi/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
@@ -255,6 +255,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
@@ -294,7 +295,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/huawei/kiwi/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib64/libxtwifi_zpp_adaptor.so:system/vendor/lib64/libxtwifi_zpp_adaptor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
@@ -946,6 +946,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/huawei/kiwi/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
@@ -1098,7 +1099,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
-    vendor/huawei/kiwi/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/huawei/kiwi/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
@@ -1106,11 +1106,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
+    libloc_ds_api \
     libqmi_oem_api \
     libtfa9895 \
     libtime_genoff \
     libmm-abl \
     qcrilmsgtunnel \
     TimeService \
+    com.qualcomm.location \
     qcnvitems \
     qcrilhook
