@@ -182,7 +182,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/lib64/libsecure_boot_keybox.so:system/lib64/libsecure_boot_keybox.so \
     vendor/huawei/kiwi/proprietary/lib64/libservices.huawei.so:system/lib64/libservices.huawei.so \
     vendor/huawei/kiwi/proprietary/lib64/libteec.so:system/lib64/libteec.so \
-    vendor/huawei/kiwi/proprietary/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
     vendor/huawei/kiwi/proprietary/lib/libcamera_post_mediaserver.so:system/lib/libcamera_post_mediaserver.so \
     vendor/huawei/kiwi/proprietary/lib/libchromatix_imx135_liveshot.so:system/lib/libchromatix_imx135_liveshot.so \
     vendor/huawei/kiwi/proprietary/lib/libdmd.so:system/lib/libdmd.so \
@@ -190,9 +189,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/lib/libFNVfbEngineLib.so:system/lib/libFNVfbEngineLib.so \
     vendor/huawei/kiwi/proprietary/lib/libhdr.so:system/lib/libhdr.so \
     vendor/huawei/kiwi/proprietary/lib/libhuawei_secure.so:system/lib/libhuawei_secure.so \
-    vendor/huawei/kiwi/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    vendor/huawei/kiwi/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/huawei/kiwi/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/huawei/kiwi/proprietary/lib/libmrc_cg_filters.so:system/lib/libmrc_cg_filters.so \
     vendor/huawei/kiwi/proprietary/lib/libmrc_cg_mfdenoise.so:system/lib/libmrc_cg_mfdenoise.so \
     vendor/huawei/kiwi/proprietary/lib/libmrc_cg_myFilter.so:system/lib/libmrc_cg_myFilter.so \
@@ -201,7 +197,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/kiwi/proprietary/lib/lib_oeminfo_interface.so:system/lib/lib_oeminfo_interface.so \
     vendor/huawei/kiwi/proprietary/lib/liboeminfo.so:system/lib/liboeminfo.so \
     vendor/huawei/kiwi/proprietary/lib/libqmi_nv_api.so:system/lib/libqmi_nv_api.so \
-    vendor/huawei/kiwi/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/huawei/kiwi/proprietary/lib/libSFBE.so:system/lib/libSFBE.so \
     vendor/huawei/kiwi/proprietary/lib/libSmartAE.so:system/lib/libSmartAE.so \
     vendor/huawei/kiwi/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
